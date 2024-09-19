@@ -37,7 +37,7 @@ function(${PROJECT_NAME}_cxx_compile_definitions target)
             OPENVDB_USE_LOG4CPLUS                   # Should openvdb use log4cplus (vs. std::cerr) for log messages?
             _LIBCPP_ENABLE_CXX17_REMOVED_AUTO_PTR=1 # Clang - enable auto_ptr when targeting c++17
             _LIBCPP_ENABLE_CXX17_REMOVED_RANDOM_SHUFFLE=1 # Clang - ensure std::random_shuffle is available
-            DWA_OPENDCX_EXPORTS
+             
     )
     if(MOONRAY_DWA_BUILD)
         target_compile_definitions(${target}
